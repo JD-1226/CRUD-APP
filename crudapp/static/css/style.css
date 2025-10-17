@@ -170,3 +170,134 @@ body {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
     }
+
+
+/* Register page */
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.register-form h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.register-form form p {
+    font-size: 18px;
+
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+} 
+
+
+/* Table */
+.table {
+  width: 90%;
+  margin: 50px auto;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  margin-top: -350px;
+}
+
+/* Table header */
+.table th {
+  background-color: #f3a8d1; /* soft pink */
+  color: #333;
+  text-align: left;
+  padding: 12px 15px;
+  font-weight: bold;
+}
+
+/* Table rows */
+.table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Hover effect */
+.table tr:hover {
+  background-color: #f9f0f5;
+}
+
+/* Alternate row color */
+.table tr:nth-child(even) {
+  background-color: #fdf5fa;
+}
+
+/* Align text better */
+.table td,
+.table th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+/* Records */ 
+.card {
+  width: 450px;
+  margin: 80px auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  background-color: #d48dd6;
+  color: white;
+  padding: 18px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.card-body {
+  padding: 22px 26px;
+}
+
+.card-title {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.card-title strong {
+  color: #b44bbb;
+  min-width: 90px;
+  display: inline-block;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 18px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(90deg, #e48ccc, #b46fbb);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #c66abb, #8e44ad);
+  transform: translateY(-2px);
+}

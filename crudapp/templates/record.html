@@ -1,0 +1,24 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+
+<div class="card">
+    <div class="card-header">
+        <strong>Name : </strong>{{ student_record.first_name}} {{ student_record.last_name}}
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">
+            <tr>
+                <strong>Class</strong>{{ student_record.Class }}  <br>
+                <strong>Phone</strong>{{ student_record.phone_number }} <br>
+                <strong>Address</strong>{{ student_record.address}} <br>
+                <strong>State</strong>{{ student_record.state}} <br>
+                <strong>City</strong>{{ student_record.city }} <br>
+                <strong>Creted_at</strong>{{ student_record.created_at }} <br>
+            </tr>
+        </h5>
+        <a href= {% url 'home' %} class="button">Go Back</a>
+     </div>
+</div>
+
+{% endblock %}
