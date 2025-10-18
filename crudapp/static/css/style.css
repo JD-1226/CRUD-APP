@@ -206,7 +206,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #fff;
-  margin-top: -350px;
+  margin-top: -250px;
 }
 
 /* Table header */
@@ -300,4 +300,104 @@ body {
 .button:hover {
   background: linear-gradient(90deg, #c66abb, #8e44ad);
   transform: translateY(-2px);
+}
+
+
+/* add record */
+.add-record-container {
+  width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.add-record-container h1 {
+  font-size: 32px;
+  color: #b300b3;
+  margin-bottom: 25px;
+}
+
+.add-record-form .input-box {
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+.add-record-form .input-box input {
+  width: 100%;
+  padding: 12px 18px;
+  border: 2px solid #000;
+  border-radius: 40px;
+  color: #000000;
+  font-size: 15px;
+  outline: none;
+}
+
+.add-record-form .input-box input::placeholder {
+  color: #000000;
+}
+
+.add-record-form .button {
+  display: inline-block;
+  margin-top: 15px;
+  width: 60%;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #f5b3e0, #e48ccc);
+  color: black;
+}
+
+
+/* update record */
+.update-record-container {
+  width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.update-record-container h1 {
+  font-size: 32px;
+  color: #b300b3;
+  margin-bottom: 25px;
+}
+
+.update-record-form .input-box {
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+.update-record-form .input-box input {
+  width: 100%;
+  padding: 12px 18px;
+  border: 2px solid #000;
+  border-radius: 40px;
+  color: #000000;
+  font-size: 15px;
+  outline: none;
+}
+
+.update-record-form .input-box input::placeholder {
+  color: #000000;
+}
+
+.update-record-form .button {
+  display: inline-block;
+  margin-top: 15px;
+  width: 60%;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #f5b3e0, #e48ccc);
+  color: black;
 }

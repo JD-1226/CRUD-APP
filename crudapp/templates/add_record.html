@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="add-record-container">
+    <h1>Add Record</h1>
+
+    <form method="post" action="{% url 'add_record' %}" class="add-record-form">
+        {% csrf_token %}
+
+        <div class="input-box">
+            <input type="text" name="first_name" placeholder="First Name" required>
+        </div>
+        <div class="input-box">
+            <input type="text" name="last_name" placeholder="Last Name" required>
+        </div>
+        <div class="input-box">
+            <input type="text" name="Class" placeholder="Class" required>
+        </div>
+        <div class="input-box">
+            <input type="text" name="phone_number" placeholder="Phone Number" required>
+        </div>
+        <div class="input-box">
+            <input type="text" name="address" placeholder="Address" required>
+        </div>
+        <div class="input-box">
+            <input type="text" name="city" placeholder="City" required>
+        </div>
+        <div class="input-box">
+            <input type="text" name="state" placeholder="State" required>
+        </div>
+
+        <button type="submit" class="button">Add Record</button>
+        <a href="{% url 'home' %}" class="button back-btn">Go Back</a>
+    </form>
+</div>
+
+{% endblock %}

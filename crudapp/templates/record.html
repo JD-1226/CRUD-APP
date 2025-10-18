@@ -18,6 +18,8 @@
             </tr>
         </h5>
         <a href= {% url 'home' %} class="button">Go Back</a>
+        <a href= {% url 'delete_record' student_record.id%} class="button">Delete</a>
+        <a href= {% url 'update_record' student_record.id%} class="button">Update Record</a>
      </div>
 </div>
 
