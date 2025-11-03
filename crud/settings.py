@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 from django.contrib.messages import constants as messages
+import mongoengine
+from pymongo import MongoClient
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -79,6 +81,16 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+mongoengine.connect(
+    db='crud_app_db',
+    host='mongodb://localhost:27017/crud_app_db'
+)
+
+#Transferring data to mongodb
+MONGO_CLIENT = MongoClient("mongodb://localhost:27017/")
+MONGO_DB = MONGO_CLIENT["crud_app_db"]
+MONGO_COLLECTION = MONGO_DB["records"]
 
 
 # Password validation
